@@ -1,0 +1,98 @@
+.container {
+  width: 50vw;
+  float: right;
+  display: flex;
+  height: max-content;
+  position: relative;
+}
+
+.container > img {
+  width: 50vw;
+  height: min-content;
+  object-fit:contain;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 300px;
+  max-height: 300px;
+  background: white;
+}
+
+.text > h2 {
+  margin-left: 1vw;
+  height: max-content;
+  color: #49515b;
+  font-family: "BoldFont";
+}
+
+.text > p {
+  margin-left: 1vw;
+  margin-top: 1vw;
+  color: #49515b;
+  font-size: large;
+}
+
+.text {
+  width: 49vw;
+  height: max-content;
+}
+
+@media (max-width:1270px) {
+  .text > p {
+    font-size: 14px;
+  }
+
+  .text > h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:950px) {
+  .container {
+    width: 55vw;
+  }
+}
+
+@media (max-width:810px) {
+  .text > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:635px) {
+  .text > p {
+    font-size: 10px;
+  }
+
+  .text > h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:525px) {
+  .container {
+    width: 42vw;
+    display: grid;
+  }
+
+  .text {
+    width: 42vw;
+  }
+
+  .container > img {
+    width: 100%;
+    margin: auto;
+    max-width: 150px;
+  }
+
+  .text > h2 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:375px) {
+  .container > img {
+    scale: none;
+    transform: none;
+    width: 100%;
+  }
+}

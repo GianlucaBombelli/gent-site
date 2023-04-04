@@ -1,0 +1,14 @@
+<app-header></app-header>
+<app-links></app-links>
+<div class="container">
+  <h1>Toner e Cartucce</h1>
+  <h3>per fotocopiatori e stampanti</h3>
+  <div class="list">
+    <div class="product"  *ngFor="let prodotto of prodotti; index as i" >
+      <img [src]="prodotto.image" [alt]="prodotto.alt">
+      <h4>{{prodotto.nome}}</h4></div>
+  </div>
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,16 @@
+<head>
+  <script src="GENT-sito/src/assets/script.js" defer></script>
+  </head>
+  <body>
+  <section aria-label="flyers-carousel">
+    <div class="carousel" data-carousel>
+      <img class="logo" src="assets/Gent-logo2.png" alt="logo not load">
+      <ul data-slides>
+        <li class="slide" *ngFor="let slide of slides; let i = index" [ngClass]="{'active': i === activeIndex}">
+          <img [src]="slide.image" [alt]="slide.alt" class="animation">
+        </li>
+      </ul>
+
+    </div>
+  </section>
+  </body>

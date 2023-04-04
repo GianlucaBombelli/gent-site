@@ -1,0 +1,13 @@
+.header {
+  width: 100vw;
+  text-align: center;
+  height: 130px;
+  position: relative;
+  background: #ececec;
+}
+
+.header > a > img {
+  height: 100%;
+  padding: 10px;
+}
+

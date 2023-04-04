@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+declare const offset: void;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

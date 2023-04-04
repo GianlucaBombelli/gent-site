@@ -1,0 +1,68 @@
+.footer {
+  background: #4d5b69;
+  color: #b5d6f5;
+  width: 100vw;
+  margin-top: 50px;
+}
+
+.display {
+  width: 100vw;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  text-align: center;
+}
+
+.display > ul {
+  font-family: 'BoldFont';
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.display > ul > h4 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.display > ul > li {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'CommonFont';
+  text-align: center;
+  padding: 5px;
+  font-size: small;
+}
+
+.display > ul > li > a {
+  text-decoration: none;
+  color: #b5d6f5;
+}
+
+.fa-brands {
+  margin-right: 5px;
+  font-size: large;
+}
+
+@media (max-width:630px) {
+  h4 {
+    font-size: small;
+  }
+  .f-title > li,
+  .f-title > a {
+    font-size: 4px;
+  }
+}
+@media (max-width: 600px) {
+  .display {
+    margin: auto;
+    padding: 0 7%;
+    grid-auto-flow: row;
+  }
+
+  .display > ul > li {
+    text-align: center;
+  }
+}
+
+
